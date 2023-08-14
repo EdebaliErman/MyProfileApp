@@ -100,12 +100,7 @@ textarea {
 }
 
 .contacts form textarea {
-    width: 639px;
-    height: 253px;
-    max-width: 618px;
-    min-width: 314px;
-    max-height: 153px;
-    min-height: 153px;
+    
 }
 .contacts button{
     background-image: var(--colorBackground);
