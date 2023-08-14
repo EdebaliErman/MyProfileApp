@@ -1,0 +1,25 @@
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem;
+    position: relative;
+}
+.projects h4{
+    font-size: 1.8rem;
+
+}
+.projects h3{
+    margin-top: -3rem;
+    font-size: 2rem;
+}
+.projects .socialProfile{
+    width: 34rem;
+    height: 34rem;
+}
+.projects .socialProfile .svgSocial{
+    height: 25rem;
+    margin: 1rem;
+}

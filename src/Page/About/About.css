@@ -1,0 +1,95 @@
+/* :root {
+    --colorTextCard: #fffffe;
+    --colorBackgroundCard: #d1cece9a;
+    --shadow: inset 1px 1px 5px 3px #302f2f;
+    --svgBackGround:#f1f1ee98;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --textShadow: 1px 1px 1px rgb(78, 40, 9);
+    --colorText: #cd950c;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --svgColor: orange;
+  } */
+.about {
+    display: block;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem 13rem;
+
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem;
+    position: relative;
+    flex-basis: calc(10.33% - 10px);
+    
+}
+
+.aboutImageCard {
+    height: 40vh;
+    background-color: var(--colorBackgroundCard);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.aboutImageCard img {
+    max-height: 48vh;
+    height: 38vh;
+    width: 30vh;
+    margin: 1rem;
+}
+
+.aboutInfoCard {
+    bottom: 0;
+    height: 40vh;
+}
+
+.aboutInfoCard h1 {
+    color: var(--colorText);
+    text-align: center;
+    font-family: var(--textNorican);
+}
+
+.aboutInfoCardItem {
+    background-color: var(--colorBackgroundCard);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    height: 28vh;
+    width: 80vh;
+    padding:1rem 1rem;
+    position: relative;
+}
+
+.aboutInfoCardItem div {
+    bottom: 3rem;
+    position: absolute;
+    padding: 1rem;
+}
+.aboutCertificatesCard{
+    background-color: var(--colorBackgroundCard);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 34rem;
+    height: 30rem;
+}
+
+.aboutCertificates {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: calc(33.33% - 20px);
+}

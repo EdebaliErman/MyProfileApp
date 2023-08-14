@@ -1,0 +1,49 @@
+/* :root {
+    --colorTextCard: #d3d1cb;
+    --colorBackgroundCard: #72320850;
+    --shadow: inset 1px 1px 5px 3px #d3d1cb;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --textShadow: 1px 1px 1px rgb(78, 40, 9);
+} */
+
+.profileCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 30rem;
+    height: 18rem;
+   background-image: var(--cardImageBackground);
+    border-radius: 10%;
+    color: var(--colorText);
+    position: relative;
+}
+
+.profilFoto {
+    width: 12rem;
+    height: 15rem;
+    margin: 1rem;
+    border-radius: 15% 10%;
+}
+
+.profileCardText h3,
+.profileCardText h4 {
+    color: var(--colorTextCard);
+    font-family: var(--textGalada);
+    text-shadow: var(--textShadow);
+}
+
+.profileCardText h1 {
+    color: var(--colorText);
+    text-shadow: var(--textShadow);
+    font-family: var(--textNorican);
+}
+
+.profileSvg {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}

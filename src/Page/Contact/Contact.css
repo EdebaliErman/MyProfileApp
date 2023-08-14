@@ -1,0 +1,131 @@
+.contacts {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: orange;
+    gap: 12rem;
+    flex-wrap: wrap;
+}
+
+.contacts .contactsSocial {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.contactsSocial .mail,
+.linkedin,
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .mail .mailSvg,
+.contacts .github .githubSvg,
+.contacts .linkedin .linkedinSvg {
+    margin: 1rem;
+    background-image: var(--colorBackground);
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--colorText);
+}
+
+.contacts svg {
+    width: 100px;
+    height: 100px;
+}
+
+.mailText,
+.githubText,
+.linkedinText {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    color: gainsboro;
+    text-shadow: 1px 2px 3px black;
+}
+
+.contactsBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.contacts form {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    background-image: var(--colorBackground);
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 47.75rem;
+    height: 39.75rem;
+    position: relative;
+}
+
+.contacts form h3 {
+    margin: 0;
+    color: gainsboro;
+    text-shadow: 1px 2px 3px black;
+}
+
+.contacts form input,
+textarea {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 38rem;
+    margin: 1rem;
+    border: none;
+    background-color: gainsboro;
+    color: var(--colorText);
+    outline: none;
+    box-shadow: inset 1px 1px 13px 3px rgba(0, 0, 0, 0.123);
+}
+
+.contacts form input::placeholder,textarea::placeholder {
+    color: var(--colorText);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.contacts form textarea {
+    width: 639px;
+    height: 253px;
+    max-width: 618px;
+    min-width: 314px;
+    max-height: 153px;
+    min-height: 153px;
+}
+.contacts button{
+    background-image: var(--colorBackground);
+    font-size: 2rem;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: gainsboro;
+    text-shadow: 1px 1px 12px black;
+    border: none;
+    width: 12rem;
+    position: absolute;
+    bottom: 10;
+    left:5rem;
+}
+.contacts button:hover{
+    background-image: radial-gradient(ellipse at center, rgba(220, 220, 220, 0.925) , rgba(252, 125, 7, 0.048));
+    font-size: 2.3rem;
+    color: var(--colorText);
+    cursor: pointer;
+
+}

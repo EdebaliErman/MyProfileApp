@@ -1,0 +1,20 @@
+.projectCardButton{
+display: block;
+align-self: center;
+justify-content: center;
+padding: 1rem;
+background-image: var(--cardImageBackground);
+border-radius: 1rem;
+position: relative;
+}
+.projectCardButton img{
+    width: 32rem;
+    height: 23rem;
+    border-radius: 1rem;
+}
+.projectCardButton .detailButton{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    
+}

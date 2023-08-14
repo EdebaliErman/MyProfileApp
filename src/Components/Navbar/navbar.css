@@ -1,0 +1,52 @@
+/* :root {
+    --colorTextCard: #d3d1cb;
+    --colorBackgroundCard: #72320850;
+    --shadow: inset 1px 1px 5px 3px #d3d1cb;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --textShadow: 1px 1px 1px rgb(78, 40, 9);
+    --colorText: #cd950c;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+  }  
+   */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.logo {
+    color: var(--colorText);
+    font-size: 3.5rem;
+    font-family: var(--textBeau);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1rem;
+    font-family: var(--textGalada);
+    font-size: 1.8rem;
+}
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorText);
+}
+ul a:hover{
+    color: var(--colorTextCard);
+    text-shadow: 1px 3px 3px rgb(245, 244, 244);
+    box-shadow: inset 1px 1px 12px 12px rgba(0, 0, 0, 0.096);
+    border-radius: 1rem;
+    padding:0 1rem;
+}

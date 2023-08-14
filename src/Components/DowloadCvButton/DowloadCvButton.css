@@ -1,0 +1,33 @@
+.dowloadButton {
+   background-image: var(--cardImageBackground);
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 0.7rem;
+}
+
+.dowloadButton svg {
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    fill: var(--svgColor);
+}
+
+.dowloadButton button {
+    margin: 1rem;
+    width: 10rem;
+    border: none;
+    color: white;
+    background-color: var(--colorBackgroundCard);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-size: x-large;
+    font-family: var(--textBeau);
+    text-shadow: var(--textShadow);
+}
+
+.dowloadButton button:hover {
+    background-color: var(--colorText);
+}

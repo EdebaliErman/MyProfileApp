@@ -1,0 +1,43 @@
+/* :root {
+    --colorTextCard: #d3d1cb;
+    --colorBackgroundCard: #72320850;
+    --shadow: inset 1px 1px 5px 3px #d3d1cb;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --textShadow: 1px 1px 1px rgb(78, 40, 9);
+    --colorText: #cd950c;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+  }   */
+.projectCard {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    width: fit-content;
+   background-image: var(--cardImageBackground);
+    border-radius: 10%;
+    color: var(--colorText);
+    position: relative;
+}
+
+.projectCard img {
+    width: 10rem;
+    border-radius: 15% 10%;
+}
+
+.projectCardTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.projectCardTitleText h4{
+    position: absolute;
+    margin-top: -2rem;
+}

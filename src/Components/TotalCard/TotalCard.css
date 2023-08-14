@@ -1,0 +1,29 @@
+.totalCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    height: 18rem;
+    gap: 1rem;
+   background-image: var(--cardImageBackground);
+    border-radius: 1rem;
+}
+
+.totalCard div {
+    text-align: center;
+    box-shadow: 1px 1px 12px 12px var(--colorBackgroundCard);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.totalCard div h2 {
+    color: var(--colorTextCard);
+    text-shadow: var(--textShadow);
+}
+
+.totalCard h3 {
+    color: var(--colorText);
+    text-shadow: var(--textShadow);
+
+}

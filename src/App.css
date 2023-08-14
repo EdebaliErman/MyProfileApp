@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Galada&family=Norican&display=swap');
+
+:root {
+  --colorTextCard: #6e6d6d;
+  --colorBackgroundCard: #4e52522f;
+  --shadow: inset 1px 1px 5px 3px #302f2f;
+  --svgBackGround: #38383515;
+  --colorBackground: radial-gradient(ellipse at center, #ffffff, #949391);
+  --textShadow: 2px 1px 1px rgb(0, 0, 0);
+  --colorText: #f78821;
+  --textBeau: 'Beau Rivage';
+  --textNorican: 'Norican';
+  --textGalada: 'Galada';
+  --svgColor: rgb(26, 25, 25);
+  --cardImageBackground: radial-gradient(ellipse at center, #ffffff, #6968625d);
+}
+
+html {
+  background-image: var(--colorBackground);
+}
+
+.profileCard,
+.detailCard,
+.projectCard,
+.socialProfile,
+.totalCard,
+.dowloadButton,
+.aboutImageCard,
+.aboutInfoCard,
+.aboutCertificatesCard,
+.aboutCertificates,
+.aboutItem .socialProfile,
+.projectCardButton,
+.contactsSocial,
+.contacts form,.detailProfile,.skillCardsBar,.detailProject{
+animation: swashIn 2s backwards alternate;
+
+}
+
+.home {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* Öğelerin yeni satıra geçmesini sağlar */
+
+}
+
+.home .homeItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+  flex-basis: calc(33.3% -20px);
+}
+
+h4 {
+  color: var(--colorText);
+  text-shadow: var(--textShadow);
+}
+
+.App {
+  position: relative;
+}
+
+.footerNavbar ul {
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px),
+(max-width:1050px) {
+
+  .App .navbar {
+    position: relative;
+  }
+
+  .App .navbar .logo {
+    text-align: center;
+    position: absolute;
+  }
+
+  .App .navbar ul li {
+    display: none;
+    content: '';
+  }
+
+  .App .home .homeItem .detailCard,
+  .homeItem .projectCard {
+    width: 28rem;
+  }
+
+  .App .home .homeItem .socialProfile {
+    width: 28rem;
+  }
+
+  .App .home .homeItem .totalCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    min-width:250px ;
+    width:34rem ;
+    margin: 1rem;
+  }
+
+  .App .home .dowloadButton {
+    width: 21rem;
+  }
+
+  .App .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App .about .aboutItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .App .about .aboutItem .aboutInfoCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .App .about .aboutItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 20rem;
+    margin-bottom: 5rem;
+  }
+
+  .App .about .aboutItem .aboutInfoCard .aboutInfoCardItem {
+    padding: 1rem;
+    height: fit-content;
+  }
+
+  .App .about .aboutItem .aboutInfoCard .aboutInfoCardItem h4 {
+    padding: 1rem;
+    outline: auto;
+
+  }
+
+  .App .about .aboutItem .aboutCertificatesCard {
+    margin-top: 5rem;
+  }
+
+  .App .about .aboutItem .detailCard .projectCard {
+    width: 28rem;
+  }
+
+  .App .about .aboutItem .socialProfile {
+    width: 28rem;
+  }
+
+  .App .about .aboutItem .detailCard,
+  .App .about .aboutItem .dowloadButton {
+    width: 28rem;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .projects .projectCardButton {
+    width: 15rem;
+    height: 10rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+
+
+  }
+
+  .App .projectCardButton img {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+  }
+
+  .App .projectCardTitleBox h3,
+  .App .projectCardTitleBox h4 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .App .projects .socialProfile {
+    width: 30rem;
+  }
+
+  .App .projects .socialProfile h3,
+  .App .projects .socialProfile h4 {
+    font-size: 1rem;
+    margin: 0.3rem;
+  }
+
+  .App .footerNavbar ul {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+.App .detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .App .detail .detailProject,h3{
+    font-size: 0.5rem;
+  }
+  .App .detail .detailAbout{
+    min-width: 356px;
+  }
+}
+
+.swashIn {
+  -webkit-animation-name: swashIn;
+  animation-name: swashIn;
+}
+
+@-webkit-keyframes swashIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+  }
+}

@@ -1,0 +1,193 @@
+:root {
+  --count: initial;
+}
+
+.detail {
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+}
+.detail h1{
+  color: var(--colorText);
+  text-shadow: -1px -1px 3px black,-1px -1px 12px rgb(2, 2, 2);
+  font-family: var(--textBeau);
+}
+.detail h3{
+  color: rgb(252, 250, 250);
+  text-shadow: 1px 1px 3px black,1px 4px 1px var(--colorText),3px -4px 7px grey;
+  font-family: var(--textGalada);
+  font-size: 1.5rem;
+}
+.detailProfile {
+  text-align: center;
+  width: 35rem;
+  height: fit-content;
+  background-image: var(--cardImageBackground);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.detailProfile img {
+  height: 23rem;
+  border-radius: 1rem;
+}
+.detailProfile button{
+  padding:0.5rem 3rem;
+  border: none;
+  border-radius: 3rem;
+  background-image: var(--cardImageBackground);
+  font-family:var(--textGalada);
+}
+.detailProfile button:hover{
+  color: var(--colorText);
+  cursor: pointer;
+  background-color: #555;
+}
+.detailProfileSvgBox svg {
+  margin :1rem;
+  height: 3rem;
+  width: 3rem;
+  color: var(--svgColor);
+}
+.detailProfileSvgBox svg:hover{
+  color: var(--colorText);
+}
+.detailAbout {
+  height: 65rem;
+  overflow: auto;
+}
+
+.detailAbout>div {
+  margin: 2rem;
+  background-image: var(--cardImageBackground);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.detailAbout::-webkit-scrollbar {
+  color: transparent;
+}
+
+.detailProject {
+  margin: 3rem 0;
+  display: block;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  background-image: var(--cardImageBackground);
+}
+
+
+.skill {
+  width: 180px;
+  height: 180px;
+  position: relative;
+
+}
+
+.outer {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 10px -1px rgb(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgb(255, 255, 255, 0.7);
+  margin: 0.2rem 0.5rem;
+
+}
+
+.inner {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgb(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgb(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+    0 12px 10px -10px rgba(0, 0, 0, 05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: dash 2s linear forwards;
+
+}
+
+#number h5 {
+  font-weight: 600px;
+  color: #555;
+  padding: none;
+  margin: -1px;
+}
+
+.skillcard circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim 2s linear forwards;
+
+}
+
+.skillcard svg {
+  position: absolute;
+  top: 0px;
+  left: 12px;
+}
+
+.skillcard {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 190px;
+  margin: 6rem 1rem;
+}
+
+.skillcard h3 {
+  margin: 1rem;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: var(--count);
+  }
+}
+
+@keyframes dash {
+  0% {
+    box-shadow: inset 1px -11px 11px 4px orange;
+
+  }
+}
+
+.skillCardsBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 5rem;
+  border-radius: 1rem;
+  background-image: var(--cardImageBackground);
+  position: relative;
+}
+
+.skillCardsBar h1 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: var(--colorText);
+  font-size: 3rem;
+}

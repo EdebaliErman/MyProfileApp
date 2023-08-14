@@ -1,0 +1,66 @@
+/* :root {
+    --colorTextCard: #fffffe;
+    --colorBackgroundCard: #d1cece9a;
+    --shadow: inset 1px 1px 5px 3px #302f2f;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --textShadow: 1px 1px 1px rgb(78, 40, 9);
+    --colorText: #cd950c;
+    --textBeau: 'Beau Rivage';
+    --textNorican: 'Norican';
+    --textGalada: 'Galada';
+    --svgColor: orange;
+  }
+   */
+.socialProfile {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    width: fit-content;
+    background-image: var(--cardImageBackground);
+    border-radius: 10%;
+    color: var(--colorText);
+    position: relative;
+}
+
+.svgSocial {
+    margin: 1rem;
+    box-shadow: 1px 1px 12px 12px var(--colorBackgroundCard);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+    height: 10rem;
+}
+.svgSocial div{
+    border-radius: 10rem;
+  background-image: var(--cardImageBackground);
+    padding: 0.1rem;
+}
+
+.svgSocial svg {
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+.svgSocial path{
+    stroke: none;
+}
+
+.socialProfileTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.socialProfileTitleText h4 {
+    position: absolute;
+    margin-top: -1.7rem;
+}
