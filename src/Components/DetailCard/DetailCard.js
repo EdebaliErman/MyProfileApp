@@ -4,7 +4,7 @@ import "./DetailCard.css"
 function DetailCard() {
   return (
     <div className='detailCard'>
-         <img src='https://cdn-icons-png.flaticon.com/512/5685/5685071.png' alt='detail' />
+         <img src={process.env.PUBLIC_URL+"/assets/5685071.png"} alt='detail' />
             <div className='detailCardTitle'>
                 <div className='detailCardTitleText'>
                     <h3>MORE ABOUT ME</h3>
